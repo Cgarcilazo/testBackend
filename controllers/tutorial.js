@@ -3,7 +3,6 @@ const Tutorial = db.tutorials;
 const Op = db.Sequelize.Op;
 
 exports.create = (req, res) => {
-  console.log(req)
   // Validate request
   if (!req.body.title) {
     res.status(400).send({
